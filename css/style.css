@@ -2,9 +2,20 @@
     display: grid;
     flex-wrap: wrap; /*ext*/
     justify-content: center; /*ext*/
-    align-items: center; /*ext*/
+    align-items: center;
+    justify-items: center;
     height: 100vh; /*ext*/
     gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+.grid-item {
+    display: grid;
+    border: 1px solid #070606;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
 }
 .star {
     background-color: #e1b3f6;
