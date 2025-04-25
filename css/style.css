@@ -1,3 +1,11 @@
+.container {
+    display: grid;
+    flex-wrap: wrap; /*ext*/
+    justify-content: center; /*ext*/
+    align-items: center; /*ext*/
+    height: 100vh; /*ext*/
+    gap: 10px;
+}
 .star {
     background-color: #e1b3f6;
     width: 300px;
