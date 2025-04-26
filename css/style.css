@@ -1,27 +1,47 @@
 .container {
     display: grid;
-    flex-wrap: wrap; /*ext*/
-    justify-content: center; /*ext*/
-    align-items: center;
-    justify-items: center;
-    height: 100vh; /*ext*/
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, auto);
 }
 .grid-item {
     display: grid;
-    border: 1px solid #070606;
-    gap: 10px;
+    border: 2px solid #070606;
     align-items: center;
     justify-items: center;
     padding: 10px;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);   /*2colum- logo and hamb menu*/
+    grid-template-rows: repeat(1, auto);    /*1row*/
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: #ff44a1;
+    clip-path: circle(50% at 50% 50%);
+    justify-self: start;
+}
+.hamburger-menu {
+    width: 50px;
+    height: 50px;
+    background-color: #ff44a1;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    justify-self: end;
 }
 .star {
     background-color: #e1b3f6;
     width: 300px;
     height: 300px;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 20px;
+    padding: 10px; 
 }
 .frame {
     background-color: #44ff60;
@@ -34,11 +54,11 @@
     width: 200px;
     height: 200px;
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-}
+}   
 .message {
     background-color: #ff6b44;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 .social-media div {
